@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="FontAwesome/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="Assets/logo.png" alt="Logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutUs.html">About</a></li>
+                    <li><a href="Courses.html">Courses</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="ContactUs.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section> 
+
+    <!-- Contact us Content -->
+    <div class="Location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.501644423506!2d29.921582925199864!3d31.2068285625674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c524040c82f9%3A0x7db89c30cf1bbfc2!2z2YPZhNmK2Kkg2KfZhNi52YTZiNmFINis2KfZhdi52Kkg2KfZhNil2LPZg9mG2K_YsdmK2KkgLSDZhdio2YbZiSDYp9mE2LTYp9i32KjZig!5e0!3m2!1sar!2seg!4v1722361447798!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div> 
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Alshatby,Alexandria</p>
+                    </span>
+                </div>
+                <div> 
+                    <i class="fa-solid fa-phone"></i>                    
+                    <span>
+                        <h5>+20 1234567890</h5>
+                        <p>Saturday to Thursday, 8:00AM to 6:00PM</p>
+                    </span>
+                </div> 
+                <div> 
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>info@sci.alex.eg</h5>
+                        <p>Email Us your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="formhandler.php" method="POST">
+                    <input type="text" name="contact-name" placeholder="Enter your name" id="contact-name" required>
+                    <input type="email" placeholder="Enter your Email" name="contact-email" id="contact-email" required>
+                    <input type="text" name="contact-subject" placeholder="Enter your Subject" required>
+                    <textarea name="contact-message" id="" rows="5" required placeholder="Enter your Message"></textarea>
+                    <button class="hero-btn red-btn" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <section class="Footer">
+        
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos officiis nisi, corporis ipsum natus sunt <br> consequuntur enim mollitia in debitis eligendi ducimus corrupti.</p>
+        <!-- Icons -->
+        <div class="Icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+<!-- Toggle Menu Script -->
+<script src="script.js"></script>
+    </body>
+</html>
